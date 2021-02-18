@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment No:+6</title>
+    <style>
+        h1{
+            background-color: red;
+            color: seashell;
+            border: 2px solid black;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <h1 align="center">Mark Sheet</h1>
+
+<script>
+var name = prompt("Enter Your Name");
+var roll = prompt("Enter Your Roll");
+var Eng = prompt("Enter Your Eng Marks");
+var Maths = prompt("Enter Your Maths Marks");
+var Physics = prompt("Enter Your Physics Marks");
+var Urdu = prompt("Enter Your Urdu Marks");
+var Islamiat  = prompt("Enter Your Islamiat Marks");
+var Obtainedmarks = parseInt(Eng) + parseInt(Maths) + parseInt(Physics) + parseInt(Urdu) + parseInt(Islamiat);
+var Percentage = parseFloat(Obtainedmarks) * parseFloat(100) / parseFloat(500);
+
+document.write("Name = "+name+"<br>");
+document.write("Roll = "+roll+"<br>");
+document.write("English = "+Eng+"<br>");
+document.write("Maths = "+Maths+"<br>");
+document.write("Physics = "+Physics+"<br>");
+document.write("Urdu = "+Urdu+"<br>");
+document.write("Islamiat = "+Islamiat+"<br>");
+document.write("Obtainedmarks = "+Obtainedmarks+"<br>");
+document.write("Percentage = "+Percentage+ "%" + "<br>");
+document.write("Grade: ");
+
+if(Percentage >= 80){
+    document.write("A1");
+}else
+if(Percentage >= 70){
+    document.write("A");
+}else
+if(Percentage >= 60){
+    document.write("B");
+}else
+if(Percentage >= 50){
+    document.write("C");
+}else
+if(Percentage >= 40){
+    document.write("D");
+}else
+if(Percentage >= 33){
+    document.write("E");
+}else
+    document.write("Sorry! You are Fail"); 
+
+</script>
+
+
+    
+    
+</body>
+</html>
